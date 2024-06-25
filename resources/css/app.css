@@ -1,0 +1,55 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&family=Raleway:wght@400;600&family=Roboto+Condensed:wght@700&display=swap');
+
+.font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.font-roboto {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner {
+    background-image: url('/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.gradient-border {
+    position: relative;
+    width: 100%;
+    height: 315px;
+    /* Regola l'altezza come necessario */
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);
+    pointer-events: none;
+}
+
+.placeholder-bold::placeholder {
+    @apply font-bold;
+}
+
+.input-form {
+    @apply w-full p-2 border border-gray-300 rounded placeholder-bold;
+}
