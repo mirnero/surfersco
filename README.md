@@ -1,6 +1,7 @@
 L'app funziona con laravel e vue, per farla partire in locale servono due comandi da fare in due terminali distinti
 
 php artisan serve
+
 npm run dev
 
 E poi accedere a http://127.0.0.1:8000
